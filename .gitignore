@@ -1,0 +1,33 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# ======================
+# Jupyter / Notebooks
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# Environment variables / secrets
+# ======================
+.env
+*.env
+
+# ======================
+# SQL / bazy danych
+# ======================
+*.sql
+*.db
+*.sqlite
+*.sqlite3*
