@@ -17,7 +17,7 @@ ENV/
 # Jupyter / Notebooks
 # ======================
 .ipynb_checkpoints/
-
+*.png
 # ======================
 # Environment variables / secrets
 # ======================
