@@ -6,7 +6,9 @@ __pycache__/
 *.pyo
 *.pyd
 *.pdb
-
+#Logs
+*.log
+logs/
 # virtual environment
 .venv/
 env/
@@ -17,7 +19,7 @@ ENV/
 # Jupyter / Notebooks
 # ======================
 .ipynb_checkpoints/
-
+*.png
 # ======================
 # Environment variables / secrets
 # ======================
