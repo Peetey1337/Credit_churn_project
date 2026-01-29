@@ -29,7 +29,6 @@ ENV/
 # ======================
 # SQL / bazy danych
 # ======================
-*.sql
 *.db
 *.sqlite
 *.sqlite3*

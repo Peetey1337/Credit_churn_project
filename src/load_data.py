@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
 from __init__ import get_logger
@@ -28,7 +28,7 @@ def to_mysql(df, table_name: str):
     engine = make_engine()
     try:
         with engine.connect() as conn:
-            conn.execute("SELECT 1")
+            conn.execute(text("SELECT 1"))
         logger.info(f"Writing DataFrame to MySQL table '{table_name}'")
         df.to_sql(table_name, con=engine, if_exists="replace", index=False)
     except SQLAlchemyError as e:
